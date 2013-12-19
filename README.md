@@ -6,7 +6,7 @@ This is [carrot](http://carrot.is)'s starter template for node projects. It uses
 ### Installation
 
 - `npm install sprout -g`
-- `sprout add node https://github.com/carrot/sprout-node.git
+- `sprout add node https://github.com/carrot/sprout-node.git`
 
 ### Options
 

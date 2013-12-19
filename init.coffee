@@ -1,13 +1,18 @@
+fs = require 'fs'
+path = require 'path'
+
 exports.configure = [
   'name',
+  'github_username',
   'description',
   {
-    name: 'travis',
-    message: 'do you want to use travis-ci? (y/n)',
-    validator: /y|n/,
+    name: 'travis'
+    message: 'use travis? (y/n)'
+    validator: /y|n/
     default: 'y'
   }
 ]
 
-exports.after = (sprout) ->
-  console.log sprout.config
+exports.after = (s, cb) ->
+  if s.config_values.travis == 'n' then s.remove('.travis.yml')
+  cb()

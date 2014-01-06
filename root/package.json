@@ -1,29 +1,25 @@
 {
   "name": "<%= name %>",
   "version": "0.0.0",
+  "author": "Carrot Creative <dev@carrotcreative.com>",
   "description": "<%= description %>",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/<%= github_username %>/<%= name %>.git"
   },
+  "main": "index.js",
   "dependencies": {
     "coffee-script": "1.x.x"
   },
   "devDependencies": {
     "mocha": "*",
-    "should": "*",
-    "gulp": "3.x.x",
-    "gulp-coffee": "1.x.x"
+    "should": "*"
   },
   "scripts": {
-    "test": "mocha",
-    "prepublish": "mv lib/ src; node_modules/.bin/gulp build",
-    "postpublish": "rm -rf lib; mv src/ lib"
+    "test": "mocha"
   },
-  "author": "Carrot Creative <dev@carrotcreative.com>",
-  "license": "MIT"
+  "engines": {
+    "node": ">=0.10.0"
+  }
 }

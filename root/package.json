@@ -8,13 +8,11 @@
     "type": "git",
     "url": "https://github.com/<%= github_username %>/<%= name %>.git"
   },
-  "main": "index.js",
-  "dependencies": {
-    "coffee-script": "1.x.x"
-  },
+  "main": "lib",
   "devDependencies": {
     "mocha": "*",
-    "should": "*"
+    "should": "*",
+    "coffee-script": "1.7.x"
   },
   "scripts": {
     "test": "mocha"

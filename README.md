@@ -8,14 +8,15 @@ This is [carrot](http://carrot.is)'s starter template for node projects. It uses
 - `npm install sprout -g`
 - `sprout add node https://github.com/carrot/sprout-node.git`
 
+### Usage
+
+```
+sprout init node <your_project_name>
+```
+
 ### Options
 
 - **name** (name of the project)
 - **description** (a short description of the project)
-
-### Future
-
-- travis y/n
-- manpage y/n
-- bin folder y/n
-- docs folder y/n
+- **github_username** (your github username)
+- **travis** (boolean, use travis or not)

@@ -2,17 +2,29 @@ fs = require 'fs'
 path = require 'path'
 
 exports.configure = [
-  'name',
-  'github_username',
-  'description',
   {
+    type: 'input',
+    name: 'name',
+    message: "What is your project's name?"
+  },
+  {
+    type: 'input',
+    name: 'github_username',
+    message: 'What is your github username?'
+  },
+  {
+    type: 'input',
+    name: 'description',
+    message: 'A brief description of your project'
+  },
+  {
+    type: 'confirm'
     name: 'travis'
-    message: 'use travis? (y/n)'
-    validator: /y|n/
-    default: 'y'
+    message: 'Do you want to use Travis CI?'
+    default: true
   }
 ]
 
 exports.after = (s, cb) ->
-  if s.config_values.travis == 'n' then s.remove('.travis.yml')
+  if not s.config_values.travis then s.remove('.travis.yml')
   cb()

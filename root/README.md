@@ -1,4 +1,4 @@
-# <%= name %> [![npm](https://badge.fury.io/js/<%= name %>.png)](http://badge.fury.io/js/<%= name %>) <% if (travis == 'y') { %>[![tests](https://travis-ci.org/<%= github_username %>/<%= name %>.png?branch=master)](https://travis-ci.org/<%= github_username %>/<%= name %>)<% } %> [![dependencies](https://david-dm.org/<%= github_username %>/<%= name %>.png)](https://david-dm.org/<%= github_username %>/<%= name %>)
+# <%= name %> [![npm](https://badge.fury.io/js/<%= name %>.png)](http://badge.fury.io/js/<%= name %>) <% if (travis) { %>[![tests](https://travis-ci.org/<%= github_username %>/<%= name %>.png?branch=master)](https://travis-ci.org/<%= github_username %>/<%= name %>)<% } %> [![dependencies](https://david-dm.org/<%= github_username %>/<%= name %>.png)](https://david-dm.org/<%= github_username %>/<%= name %>)
 
 <%= description %>
 

@@ -1,7 +1,7 @@
 Sprout Node Template
 --------------------
 
-This is [carrot](http://carrot.is)'s starter template for node projects. It uses coffeescript for the code, and mocha/should.js for the tests. It's got all the files in the base you should need to get started right. It will also compile all your coffee into js and move the coffee into a `src` folder before it's published to npm.
+This is [carrot](http://carrot.is)'s starter template for node projects. It uses coffeescript for the code, and mocha/chai for the tests. It's got all the files in the base you should need to get started right. It will also compile all your coffee into js and move the coffee into a `src` folder before it's published to npm.
 
 ### Installation
 
@@ -13,6 +13,8 @@ This is [carrot](http://carrot.is)'s starter template for node projects. It uses
 ```
 sprout init node <your_project_name>
 ```
+
+Once you have initialized the project, you can run tests with `npm test`, lint the project with `npm run lint`, and get a report of your test coverage with `npm run coverage`.
 
 ### Options
 

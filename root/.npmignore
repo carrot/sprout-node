@@ -1,5 +1,6 @@
 test
 src
 Makefile
+contributing.md
 .editorconfig
 <% if (travis) { %>.travis.yml<% } %>

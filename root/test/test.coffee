@@ -1,7 +1,4 @@
-should = require 'should'
-<%= name %> = require '..'
-
 describe 'basic', ->
 
   it 'should work', ->
-    <%= name %>.should.eql 'wow'
+    <%= S(name).underscore().s %>.should.eql 'wow'

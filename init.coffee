@@ -1,6 +1,3 @@
-fs = require 'fs'
-path = require 'path'
-
 exports.configure = [
   {
     type: 'input',

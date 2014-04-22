@@ -1,4 +1,6 @@
-# <%= name %> [![npm](https://badge.fury.io/js/<%= name %>.png)](http://badge.fury.io/js/<%= name %>) <% if (travis) { %>[![tests](https://travis-ci.org/<%= github_username %>/<%= name %>.png?branch=master)](https://travis-ci.org/<%= github_username %>/<%= name %>)<% } %> [![dependencies](https://david-dm.org/<%= github_username %>/<%= name %>.png?theme=shields.io)](https://david-dm.org/<%= github_username %>/<%= name %>)
+# <%= name %>
+
+[![npm](http://img.shields.io/npm/v/<%= name %>.svg?style=flat)](https://badge.fury.io/js/<%= name %>) <% if (travis) { %>[![tests](http://img.shields.io/travis/<%= github_username %>/<%= name %>/master.svg?style=flat)](https://travis-ci.org/<%= github_username %>/<%= name %>)<% } %> [![dependencies](http://img.shields.io/gemnasium/<%= github_username %>/<%= name %>.svg?style=flat)](https://david-dm.org/<%= github_username %>/<%= name %>)
 
 <%= description %>
 
@@ -6,7 +8,7 @@
 
 ### Why should you care?
 
-Write about what this project means.
+Write about why this project is important.
 
 ### Installation
 

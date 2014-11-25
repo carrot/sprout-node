@@ -10,12 +10,12 @@
   },
   "main": "lib",
   "devDependencies": {
-    "mocha": "*",
-    "chai": "*",
-    "coffeelint": "*",
-    "istanbul": "*",
-    "mocha-lcov-reporter": "*",
-    "coffee-script": "1.7.x"
+    "mocha": "2.x",
+    "chai": "1.x",
+    "coffeelint": "1.x",
+    "istanbul": "0.3.x",
+    "mocha-lcov-reporter": "0.0.1",
+    "coffee-script": "1.8.x"
   },
   "scripts": {
     "test": "npm run lint && mocha",

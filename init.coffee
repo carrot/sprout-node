@@ -22,6 +22,5 @@ exports.configure = [
   }
 ]
 
-exports.after = (s, cb) ->
-  if not s.config_values.travis then s.remove('.travis.yml')
-  cb()
+exports.after = (utils, config) ->
+  if not config.travis then utils.target.remove('.travis.yml')

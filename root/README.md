@@ -1,6 +1,10 @@
 # <%= name %>
 
-[![npm](http://img.shields.io/npm/v/<%= name %>.svg?style=flat)](https://badge.fury.io/js/<%= name %>) <% if (travis) { %>[![tests](http://img.shields.io/travis/<%= github_username %>/<%= name %>/master.svg?style=flat)](https://travis-ci.org/<%= github_username %>/<%= name %>)<% } %> [![dependencies](http://img.shields.io/gemnasium/<%= github_username %>/<%= name %>.svg?style=flat)](https://david-dm.org/<%= github_username %>/<%= name %>)
+[![npm](https://img.shields.io/npm/v/<%= name %>.svg?style=flat-square)](https://npmjs.com/package/<%= name %>)
+[![tests](https://img.shields.io/travis/<%= github_username %>/<%= name %>.svg?style=flat-square)](https://travis-ci.org/<%= github_username %>/<%= name %>?branch=master)
+[![dependencies](https://img.shields.io/david/<%= github_username %>/<%= name %>.svg?style=flat-square)](https://david-dm.org/<%= github_username %>/<%= name %>)
+[![coverage](https://img.shields.io/coveralls/<%= github_username %>/<%= name %>.svg?style=flat-square)](https://coveralls.io/r/<%= github_username %>/<%= name %>?branch=master)
+[![coverage](https://img.shields.io/codecov/c/github/<%= github_username %>/<%= name %>.svg?style=flat-square)](https://codecov.io/gh/<%= github_username %>/<%= name %>)
 
 <%= description %>
 
@@ -12,7 +16,7 @@ Write about why this project is important.
 
 ### Installation
 
-Instructions on how to install.
+`npm install <%= name %> -S`
 
 ### Usage
 

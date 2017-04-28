@@ -1,20 +1,17 @@
-Sprout Node Template
---------------------
+# Sprout Node 6 Template
 
-This is [carrot](http://carrot.is)'s starter template for node projects. It uses coffeescript for the code, and mocha/chai for the tests. It's got all the files in the base you should need to get started right. It will also compile all your coffee into js and move the coffee into a `src` folder before it's published to npm.
+This is [carrot](http://carrot.is)'s starter template for node projects written with ES6. It uses ES6 directly, which is fully compatible with version 6+ of node.js.
 
 ### Installation
 
-- `npm install sprout-cli -g`
-- `sprout add node https://github.com/carrot/sprout-node.git`
+- `npm i sprout-cli -g`
+- `sprout add node6 https://github.com/carrot/sprout-node6.git`
 
 ### Usage
 
-```
-sprout init node <your_project_name>
-```
+`sprout init node6 <project name>`
 
-Once you have initialized the project, you can run tests with `npm test`, lint the project with `npm run lint`, and get a report of your test coverage with `npm run coverage`.
+Once you have initialized the project, you can run tests with `npm test`, and lint with `npm run lint`.
 
 ### Options
 

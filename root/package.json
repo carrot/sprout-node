@@ -1,28 +1,30 @@
 {
   "name": "<%= name %>",
-  "version": "0.0.0",
-  "author": "Carrot Creative <dev@carrotcreative.com>",
   "description": "<%= description %>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/<%= github_username %>/<%= name %>.git"
+  "version": "0.0.0",
+  "author": "<%= github_username %>",
+  "ava": {
+    "verbose": "true"
   },
-  "main": "lib",
+  "bugs": "https://github.com/<%= github_username %>/<%= name %>/issues",
   "devDependencies": {
-    "mocha": "2.x",
-    "chai": "1.x",
-    "coffeelint": "1.x",
-    "istanbul": "0.3.x",
-    "mocha-lcov-reporter": "0.0.1",
-    "coffee-script": "1.8.x"
-  },
-  "scripts": {
-    "test": "npm run lint && mocha",
-    "lint": "find lib/ -name '*.coffee' | xargs coffeelint",
-    "coverage": "make build; istanbul cover _mocha --report html -- -R spec && open coverage/index.html && make unbuild"
+    "ava": "^0.19.1",
+    "codecov": "^2.1.0",
+    "nyc": "^10.2.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">= 6"
+  },
+  "homepage": "https://github.com/<%= github_username %>/<%= name %>",
+  "license": "MIT",
+  "main": "lib",
+  "repository": "<%= github_username %>/<%= name %>",
+  "scripts": {
+    "codecov": "nyc report -r lcovonly && codecov",
+    "coverage": "nyc ava && nyc report --reporter=html && open ./coverage/index.html",
+    "lint": "standard | snazzy",
+    "test": "nyc ava"
   }
 }

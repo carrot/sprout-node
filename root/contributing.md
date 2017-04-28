@@ -9,19 +9,19 @@ If you are opening an issue about a bug, make sure that you include clear steps 
 ### Getting Set Up
 
 - Clone the project down
-- Make sure [nodejs](http://nodejs.org) has been installed and is above version `0.10.x`
+- Make sure [nodejs](http://nodejs.org) has been installed and is above version `6.x`
 - Run `npm install`
 - Put in work
 
 ### Testing
 
-This project is constantly evolving, and to ensure that things are secure and working for everyone, we need to have tests. If you are adding a new feature, please make sure to add a test for it. The test suite for this project uses [mocha](http://visionmedia.github.io/mocha/) and [should](https://github.com/visionmedia/should.js/)/
+This project is constantly evolving, and to ensure that things are secure and working for everyone, we need to have tests. If you are adding a new feature, please make sure to add a test for it. The test suite for this project uses [ava](https://github.com/sindresorhus/ava).
 
-To run the test suite, make sure you have installed mocha (`npm install mocha -g`), then you can use the `npm test` or simply `mocha` command to run the tests.
+To run the test suite just use `npm test` or install ava globally and use the `ava` command to run the tests.
 
 ### Code Style
 
-To keep a consistant coding style in the project, we're using [Polar Mobile's guide](https://github.com/polarmobile/coffeescript-style-guide), with one difference begin that much of this project uses `under_scores` rather than `camelCase` for variable naming. For any inline documentation in the code, we're using [JSDoc](http://usejsdoc.org/).
+This project uses ES6, interpreted directly by node.js. To keep a consistent coding style in the project, we are using [standard js](http://standardjs.com/). In order for tests to pass, all code must pass standard js linting. This project also uses an [editorconfig](http://editorconfig.org/). It will make life much easier if you have the [editorconfig plugin](http://editorconfig.org/#download) for your text editor. For any inline documentation in the code, we're using [JSDoc](http://usejsdoc.org/).
 
 ### Commit Cleanliness
 

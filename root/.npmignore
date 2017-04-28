@@ -1,6 +1,7 @@
 test
-src
-Makefile
 contributing.md
 .editorconfig
+coverage
+.nyc_output
+yarn.lock
 <% if (travis) { %>.travis.yml<% } %>

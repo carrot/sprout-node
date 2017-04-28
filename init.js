@@ -15,12 +15,13 @@ exports.configure = [
     message: 'A brief description of your project'
   },
   {
-    type: 'confirm'
-    name: 'travis'
-    message: 'Do you want to use Travis CI?'
+    type: 'confirm',
+    name: 'travis',
+    message: 'Do you want to use Travis CI?',
     default: true
   }
 ]
 
-exports.after = (utils, config) ->
-  if not config.travis then utils.target.remove('.travis.yml')
+exports.after = (utils, config) => {
+  if (!config.travis) utils.target.remove('.travis.yml')
+}

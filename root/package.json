@@ -24,7 +24,7 @@
   "scripts": {
     "codecov": "nyc report -r lcovonly && codecov",
     "coverage": "nyc ava && nyc report --reporter=html && open ./coverage/index.html",
-    "lint": "prettier --no-semi --single-quote",
+    "lint": "prettier --no-semi --single-quote --write '**/*.js'",
     "precommit": "npm run lint",
     "test": "nyc ava"
   }
